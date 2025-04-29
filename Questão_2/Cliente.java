@@ -40,7 +40,7 @@ public class Cliente extends Pessoa {
         if (valor <= saldo + ChequeEspecial) {
             saldo -= valor;
         } else {
-            System.out.println("Saldo insuficiente.");
+            System.out.println("Saldo insuficiente");
         }
     }
 

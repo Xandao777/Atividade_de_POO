@@ -7,7 +7,7 @@ public class leao extends Animal {
 
     @Override
     public void emitirSom() {
-        System.out.println("O leão está rugindo.");
+        System.out.println("O leão está rugindo");
     }
     
 }

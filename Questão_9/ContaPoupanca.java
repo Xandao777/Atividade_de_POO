@@ -19,9 +19,9 @@ public class ContaPoupanca extends Conta {
     public void depositar(double valor) {
         if (valor > 0) {
             setSaldo(getSaldo() + (valor + (valor * taxaJuros)));
-            System.out.println("Depósito de " + valor + " realizado com sucesso. Novo saldo: " + getSaldo());
+            System.out.println("Deposito de " + valor + " realizado com sucesso. Novo saldo: " + getSaldo());
         } else {
-            System.out.println("Valor de depósito inválido.");
+            System.out.println("Valor de depósito invalido.");
         }
     }
     @Override
@@ -30,7 +30,7 @@ public class ContaPoupanca extends Conta {
             setSaldo(getSaldo() - (valor + (valor * 0.05)));
             System.out.println("Saque de " + valor + " realizado com sucesso. Novo saldo: " + getSaldo());
         } else {
-            System.out.println("Valor de saque inválido");
+            System.out.println("Valor de saque invalido");
         }
     }
 
@@ -38,9 +38,9 @@ public class ContaPoupanca extends Conta {
         if (valor > 0 && valor <= getSaldo()) {
             this.sacar(valor);
             contaCorrente.depositar(valor);
-            System.out.println("Transferência de " + valor + " para a conta corrente realizada com sucesso.");
+            System.out.println("Transferencia de " + valor + " para a conta corrente realizada com sucesso.");
         } else {
-            System.out.println("Transferência inválida. Verifique o saldo ou o valor.");
+            System.out.println("Transferencia invalida. Verifique o saldo ou o valor.");
         }
     }
     

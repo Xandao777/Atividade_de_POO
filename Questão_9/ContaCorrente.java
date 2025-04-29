@@ -22,7 +22,7 @@ public class ContaCorrente extends Conta {
             setSaldo(getSaldo() - valor - taxaSaque);
             System.out.println("Saque de " + valor + " realizado com sucesso. Novo saldo: " + getSaldo());
         } else {
-            System.out.println("Valor de saque inválido ou limite excedido.");
+            System.out.println("Valor de saque invalido ou limite excedido.");
         }
     }
 
@@ -30,9 +30,9 @@ public class ContaCorrente extends Conta {
     public void depositar(double valor) {
         if (valor > 0) {
             setSaldo(getSaldo() + valor );
-            System.out.println("Depósito de " + valor + " realizado com sucesso. Novo saldo: " + getSaldo());
+            System.out.println("Deposito de " + valor + " realizado com sucesso. Novo saldo: " + getSaldo());
         } else {
-            System.out.println("Valor de depósito inválido.");
+            System.out.println("Valor de deposito invalido.");
         }
     }
 
@@ -40,9 +40,9 @@ public class ContaCorrente extends Conta {
         if (valor > 0 && valor <= getSaldo()) {
             this.sacar(valor);
             contaPoupanca.depositar(valor);
-            System.out.println("Transferência de " + valor + " para a conta poupança realizada com sucesso.");
+            System.out.println("Transferencia de " + valor + " para a conta poupança realizada com sucesso.");
         } else {
-            System.out.println("Transferência inválida. Verifique o saldo ou o valor.");
+            System.out.println("Transferencia invalida. Verifique o saldo ou o valor.");
         }
     }
     

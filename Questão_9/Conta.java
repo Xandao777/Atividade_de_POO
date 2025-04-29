@@ -28,9 +28,9 @@ public class Conta {
     public void depositar(double valor) {
         if (valor > 0) {
             saldo += valor;
-            System.out.println("Depósito de " + valor + " realizado com sucesso. Novo saldo: " + saldo);
+            System.out.println("Deposito de " + valor + " realizado com sucesso. Novo saldo: " + saldo);
         } else {
-            System.out.println("Valor de depósito inválido.");
+            System.out.println("Valor de depósito invalido.");
         }
     }
 
@@ -39,7 +39,7 @@ public class Conta {
             saldo -= valor;
             System.out.println("Saque de " + valor + " realizado com sucesso. Novo saldo: " + saldo);
         } else {
-            System.out.println("Valor de saque inválido ou limite excedido.");
+            System.out.println("Valor de saque invalido ou limite excedido.");
         }
     }
 
@@ -47,9 +47,9 @@ public class Conta {
         if (valor > 0 && valor <= saldo) {
             saldo -= valor;
             contaDestino.depositar(valor);
-            System.out.println("Transferência de " + valor + " realizada com sucesso. Novo saldo: " + saldo);
+            System.out.println("Transferencia de " + valor + " realizada com sucesso. Novo saldo: " + saldo);
         } else {
-            System.out.println("Valor de transferência inválido ou limite excedido.");
+            System.out.println("Valor de transferência invalido ou limite excedido.");
         }
     }
     

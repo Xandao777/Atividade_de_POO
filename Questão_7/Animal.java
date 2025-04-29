@@ -29,6 +29,6 @@ public class Animal {
         this.idade = idade;
     }
     public void emitirSom() {
-        System.out.println("O animal está fazendo barulho.");
+        System.out.println("O animal está fazendo barulho");
     }
 }
